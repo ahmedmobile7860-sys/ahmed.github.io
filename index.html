@@ -1,61 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Top Bar: Total Views + WhatsApp -->
-<div style="background:#ff6600; color:white; padding:10px; text-align:center;">
+  <head>
+<title>Ahmed Mobile Parts Store</title>
 
-  <!-- Total Views -->
-  <span style="margin-right:15px;">
-    Total Views:
-    <img src="https://hitwebcounter.com/counter/counter.php?page=123456&style=0006&nbdigits=5&type=page&initCount=0"
-    title="Total Views" />
-  </span>
-
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/923444264653" target="_blank"
-     style="background:green; color:white; padding:8px 14px; 
-     text-decoration:none; border-radius:6px; font-weight:bold;">
-     WhatsApp Order
-  </a>
-
-</div>
-<title>Ahmed Mobile Store</title>
-  <div style="text-align:center;">
-  <img src="Black Minimalist Letter A Logo_20260423_231151_0000.png" width="120">
-  </div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
+/* Background white */
 body {
   font-family: Arial, sans-serif;
-  background-color: #111;
-  color: white;
+  background-color: white;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
-h1 {
-  background-color: #ff6600;
-  color: white;
+/* Header / Title */
+.header {
   padding: 15px;
+  background: #ff6600;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
 }
 
+/* Total Views text */
+.views {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Products grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Product box */
 .product {
-  background-color: #222;
-  margin: 15px;
+  background: white;
+  border-radius: 12px;
   padding: 15px;
-  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-button {
-  background-color: green;
-  color: white;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-size: 16px;
+/* Product image same size */
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
 }
+
+/* Price style */
+.price {
+  color: #ff6600;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* WhatsApp button */
+.whatsapp-btn {
+  background: green;
+  color: white;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Hover effect */
+.product:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+
 </style>
+
+  </head>
 </style>
 
 </head>
