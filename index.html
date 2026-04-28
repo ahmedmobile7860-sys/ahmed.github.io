@@ -1,231 +1,256 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
-<title>Ahmed Mobile Parts Store</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Mobile Parts Store</title><style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:#f5f5f5;
+body {
+  background: #f4f4f4;
 }
 
 /* HEADER */
-.header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-background:white;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
-flex-wrap:wrap;
+.header {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  flex-wrap: wrap;
 }
 
-  .logo img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin-right: 10px;
-  }
-
-.menu a{
-margin:10px;
-text-decoration:none;
-color:black;
-font-weight:bold;
-}
-
-.whatsapp{
-background:#25D366;
-color:white;
-padding:8px 15px;
-border-radius:6px;
-text-decoration:none;
-}
-
-/* BANNER */
-.banner{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:40px 20px;
-background:white;
-flex-wrap:wrap;
-}
-
-.text{
-max-width:450px;
-}
-
-.text h1{
-font-size:32px;
-}
-
-.orange{
-color:#ff6600;
-}
-
-.banner img{
-width:350px;
-max-width:100%;
-}
-
-/* BUTTONS */
-.btn{
-background:#25D366;
-color:white;
-padding:10px 16px;
-border-radius:6px;
-text-decoration:none;
-display:inline-block;
-margin-top:10px;
-}
-
-.btn2{
-border:2px solid #ff6600;
-padding:10px 16px;
-border-radius:6px;
-text-decoration:none;
-color:#ff6600;
-margin-left:10px;
-}
-
-/* PRODUCTS */
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-gap: 15px;
-padding: 20px;
-width: 100%;
-
-.product{
-background:white;
-padding:15px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-.product img{
-width:100%;
-height:160px;
-object-fit:contain;
-}
-
-.price{
-color:#ff6600;
-font-weight:bold;
-}
 .logo {
   display: flex;
   align-items: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: #ff6600;
 }
 
 .logo img {
-  width: 40px;
+  width: 45px;
   margin-right: 10px;
 }
- .views {
-  display: block;
-  background: #f5f5f5;
-  border-radius: 20px;
-  padding: 6px 14px;
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo-text span {
+  color: #ff6600;
+}
+
+.views {
+  margin-top: 4px;
   font-size: 14px;
   color: #333;
-  margin-left: 55px;
-  margin-top: 4px;
-  width: fit-content;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
   font-weight: 500;
- }
+}
 
-.views img {
-  vertical-align: middle;
-  margin-left: 6px;
-} .views {
-  font-size: 14px;
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* BANNER */
+.banner {
+  background: #ffffff;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  max-width: 500px;
+}
+
+.banner-text h1 {
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+.orange {
+  color: #ff6600;
+}
+
+.banner-text p {
+  margin-top: 12px;
   color: #555;
-  margin-left: 55px;
+}
+
+.banner-buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.btn-green {
+  background: #25D366;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #ff6600;
+  color: #ff6600;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* PRODUCTS */
+.products-section {
+  padding: 30px 20px;
+}
+
+.products-section h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.price {
+  color: #ff6600;
+  font-weight: bold;
   margin-top: 5px;
-  } <div class="views">
-  
-</style>
+}
 
-</head>
+.order-btn {
+  margin-top: 8px;
+  background: #25D366;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
 
-<body>
+/* FOOTER */
+.footer {
+  background: white;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
 
-<!-- HEADER -->
-<div class="header">
-<div class="logo">
-  <img src="Black Minimalist Letter A Logo_20260423_231151_0000.png">
-  <span>AHMED MOBILE PARTS STORE</span>
+@media (max-width: 768px) {
+  .banner {
+    text-align: center;
+  }
+}
+
+</style></head><body><!-- HEADER --><div class="header">
+  <div>
+    <div class="logo">
+      <img src="logo.png" alt="logo">
+      <div class="logo-text">
+        AHMED MOBILE <span>PARTS STORE</span>
+      </div>
+    </div><div class="views">
+  👁️ Total Views:
+  <img src="https://hitwebcounter.com/counter/counter.php?page=ahmedmobilepartsstore&style=0006&nbdigits=6&type=page&initCount=202017" />
 </div>
 
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">All Parts</a> <div class="views">
-  
-</div>
-
-<a class="whatsapp" href="https://wa.me/923444264653">
-Order on WhatsApp
-</a>
-</div>
-
-<!-- BANNER -->
-<div class="banner">
-
-<div class="text">
-<h1>
-BEST QUALITY <br>
-<span class="orange">MOBILE PARTS</span><br>
-AT BEST PRICES
-</h1>
-
-<p>
-All kind of mobile parts are available here at best price and best quality.
+  </div>  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">All Parts</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a class="whatsapp-btn" href="https://wa.me/923444264653">Order on WhatsApp</a>
+  </div>
+</div><!-- BANNER --><div class="banner">
+  <div class="banner-text">
+    <h1>
+      BEST QUALITY<br>
+      <span class="orange">MOBILE PARTS</span><br>
+      AT BEST PRICES
+    </h1><p>
+  All kind of mobile parts are available here at best price and best quality.
 </p>
 
-<a class="btn" href="https://wa.me/923444264653">Order on WhatsApp</a>
-<a class="btn2" href="#">View All Products</a>
+<div class="banner-buttons">
+  <a class="btn btn-green" href="https://wa.me/923444264653">Order on WhatsApp</a>
+  <a class="btn btn-outline" href="#">View All Products</a>
 </div>
 
-<img src="banner.png" style="width:100%; max-width:450px;">
-
-</div>
-
-<h2 style="text-align:center;">OUR <span class="orange">PRODUCTS</span></h2>
-
-<!-- PRODUCTS -->
-<div class="products">
-
-<div class="product">
-<img src="1ea716c2b770577987b62e9863431055.jpg_720x720q80.jpg">
-<h3>iPhone 13 Battery</h3>
-<div class="price">Rs 4500</div>
-<a class="btn" href="https://wa.me/923444264653">Order</a>
+  </div>  <div>
+    <img src="banner.png" alt="banner">
+  </div>
+</div><!-- PRODUCTS --><div class="products-section">
+  <h2>OUR <span class="orange">PRODUCTS</span></h2>  <div class="products"><div class="product">
+  <img src="product1.png">
+  <h3>iPhone 13 Battery</h3>
+  <div class="price">Rs 4500</div>
+  <a class="order-btn" href="#">Order</a>
 </div>
 
 <div class="product">
-<img src="ramys_20260425_114004_0000.png">
-<h3>iPhone X Panel</h3>
-<div class="price">Rs 7000</div>
-<a class="btn" href="https://wa.me/923444264653">Order</a>
+  <img src="product2.png">
+  <h3>iPhone X Panel</h3>
+  <div class="price">Rs 7000</div>
+  <a class="order-btn" href="#">Order</a>
 </div>
 
 <div class="product">
-<img src="ramys_20260424_143452_0000.png">
-<h3>iPhone 13 Back</h3>
-<div class="price">Rs 2000</div>
-<a class="btn" href="https://wa.me/923444264653">Order</a>
+  <img src="product3.png">
+  <h3>iPhone 13 Back</h3>
+  <div class="price">Rs 2000</div>
+  <a class="order-btn" href="#">Order</a>
 </div>
 
-</div>
-
-</body>
+  </div>
+</div><div class="footer">
+  © 2025 Ahmed Mobile Parts Store. All Rights Reserved.
+</div></body>
 </html>
