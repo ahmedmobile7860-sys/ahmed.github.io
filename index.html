@@ -212,7 +212,7 @@ function updateViews() {
   fetch('https://api.countapi.xyz/hit/ahmed-mobile-parts-store/liveviews')
     .then(response => response.json())
     .then(data => {
-      document.getElementById("view-count").innerText = data.value;
+      document.getElementById("view-count").innerText = data.value.toLocaleString();
     })
     .catch(() => {
       document.getElementById("view-count").innerText = "0";
@@ -220,8 +220,6 @@ function updateViews() {
 }
 
 updateViews();
-
-// Har 5 second me update hoga (live feel)
 setInterval(updateViews, 5000);
 </script>
 
