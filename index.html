@@ -216,7 +216,7 @@ body {
 
 <script>
 function updateViews() {
-  fetch('https://api.countapi.xyz/hit/ahmedstore/views')
+  fetch('https://api.countapi.xyz/hit/ahmed-mobile-parts-store/visits')
     .then(response => response.json())
     .then(data => {
       document.getElementById("view-count").innerText = data.value.toLocaleString();
