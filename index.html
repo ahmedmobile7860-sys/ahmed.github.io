@@ -215,18 +215,18 @@ body {
 <!-- <!-- LIVE Views Style Counter -->
 
 <script>
-let views = localStorage.getItem("website_views");
-
-if (views === null) {
-  views = 0;
-}
-
-views++;
-
-localStorage.setItem("website_views", views);
-
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("view-count").innerText = views;
+  var count = localStorage.getItem("views_count");
+
+  if (!count) {
+    count = 0;
+  }
+
+  count++;
+
+  localStorage.setItem("views_count", count);
+
+  document.getElementById("view-count").innerText = count;
 });
 </script>
 
