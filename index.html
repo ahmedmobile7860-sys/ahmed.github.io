@@ -205,9 +205,17 @@ body {
     AHMED MOBILE <span>PARTS STORE</span>
   </div>
     
-<div class="views">
-  <img src="https://hitwebcounter.com/counter/counter.php?page=ahmedmobilepartsstore_live&style=0006&nbdigits=6&type=page&initCount=1" alt="visitor counter">
-</div>
+<!-- Live Views Counter -->
+<script async src="https://api.countapi.xyz/hit/ahmed-mobile-parts-store/visits"></script>
+<span id="view-count">Loading...</span>
+
+<script>
+fetch('https://api.countapi.xyz/get/ahmed-mobile-parts-store/visits')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('view-count').innerText = data.value;
+  });
+    </script>
 
 <div class="menu">
   <a href="#">Home</a>
