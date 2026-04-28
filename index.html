@@ -206,7 +206,27 @@ body {
   </div>
     
 <!-- <!-- LIVE Views Style Counter -->
-<div style="display:flex; align-items:center; font-family:Arial;">
+<
+</div>
+
+<script>
+function updateViews() {
+  fetch('https://api.countapi.xyz/hit/ahmed-mobile-parts-store/liveviews')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("view-count").innerText = data.value;
+    })
+    .catch(() => {
+      document.getElementById("view-count").innerText = "0";
+    });
+}
+
+updateViews();
+
+// Har 5 second me update hoga (live feel)
+setInterval(updat
+
+  div style="display:flex; align-items:center; font-family:Arial;">
 
   <!-- LIVE box -->
   <span style="
@@ -235,29 +255,9 @@ body {
     font-weight:bold;">
     0
   </span>
-
+      
 </div>
-
-<script>
-function updateViews() {
-  fetch('https://api.countapi.xyz/hit/ahmed-mobile-parts-store/liveviews')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById("view-count").innerText = data.value;
-    })
-    .catch(() => {
-      document.getElementById("view-count").innerText = "0";
-    });
-}
-
-updateViews();
-
-// Har 5 second me update hoga (live feel)
-setInterval(updateViews, 5000);
-</script>
-
-  </div>
-</div><div class="banner">
+      <div class="banner">
   <div class="container banner-inner"><div class="banner-text">
   <h1>
     BEST QUALITY<br>
