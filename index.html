@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ahmed Mobile Parts Store</title><style>
+
 * {
   margin: 0;
   padding: 0;
@@ -11,23 +12,33 @@
 }
 
 body {
-  background: #f4f4f4;
+  background: #f3f3f3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* HEADER */
 .header {
-  background: #ffffff;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 12px 18px;
   flex-wrap: wrap;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .logo img {
@@ -35,19 +46,13 @@ body {
   margin-right: 10px;
 }
 
-.logo-text {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.logo-text span {
+.logo span {
   color: #ff6600;
 }
 
 .views {
-  margin-top: 4px;
   font-size: 14px;
-  color: #333;
+  margin-top: 4px;
 }
 
 .menu {
@@ -63,7 +68,7 @@ body {
   font-weight: 500;
 }
 
-.whatsapp-btn {
+.whatsapp {
   background: #25D366;
   color: white;
   padding: 8px 14px;
@@ -74,8 +79,11 @@ body {
 
 /* BANNER */
 .banner {
-  background: #ffffff;
-  padding: 30px 20px;
+  background: white;
+  padding: 30px 18px;
+}
+
+.banner-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,7 +91,7 @@ body {
 }
 
 .banner-text {
-  max-width: 500px;
+  max-width: 520px;
 }
 
 .banner-text h1 {
@@ -100,7 +108,7 @@ body {
   color: #555;
 }
 
-.banner-buttons {
+.buttons {
   margin-top: 15px;
 }
 
@@ -129,19 +137,19 @@ body {
 
 /* PRODUCTS */
 .products-section {
-  padding: 30px 20px;
+  padding: 30px 18px;
 }
 
 .products-section h2 {
   text-align: center;
   font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
 }
 
 .product {
@@ -161,14 +169,14 @@ body {
 .price {
   color: #ff6600;
   font-weight: bold;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .order-btn {
   margin-top: 8px;
   background: #25D366;
   color: white;
-  padding: 6px 12px;
+  padding: 7px 14px;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
@@ -177,80 +185,94 @@ body {
 /* FOOTER */
 .footer {
   background: white;
-  padding: 20px;
   margin-top: 30px;
+  padding: 20px;
   text-align: center;
-  color: #555;
   font-size: 14px;
+  color: #555;
 }
 
 @media (max-width: 768px) {
-  .banner {
+  .banner-inner {
     text-align: center;
   }
 }
 
-</style></head><body><!-- HEADER --><div class="header">
-  <div>
-    <div class="logo">
-      <img src="logo.png" alt="logo">
-      <div class="logo-text">
-        AHMED MOBILE <span>PARTS STORE</span>
-      </div>
-    </div><div class="views">
-  👁️ Total Views:
-  <img src="https://hitwebcounter.com/counter/counter.php?page=ahmedmobilepartsstore&style=0006&nbdigits=6&type=page&initCount=202017" />
-</div>
-
-  </div>  <div class="menu">
-    <a href="#">Home</a>
-    <a href="#">All Parts</a>
-    <a href="#">About Us</a>
-    <a href="#">Contact Us</a>
-    <a class="whatsapp-btn" href="https://wa.me/923444264653">Order on WhatsApp</a>
+</style></head><body><div class="header">
+  <div class="container topbar"><div>
+  <div class="logo">
+    <img src="logo.png" alt="logo">
+    AHMED MOBILE <span>PARTS STORE</span>
   </div>
-</div><!-- BANNER --><div class="banner">
-  <div class="banner-text">
-    <h1>
-      BEST QUALITY<br>
-      <span class="orange">MOBILE PARTS</span><br>
-      AT BEST PRICES
-    </h1><p>
-  All kind of mobile parts are available here at best price and best quality.
-</p>
 
-<div class="banner-buttons">
-  <a class="btn btn-green" href="https://wa.me/923444264653">Order on WhatsApp</a>
-  <a class="btn btn-outline" href="#">View All Products</a>
-</div>
-
-  </div>  <div>
-    <img src="banner.png" alt="banner">
+  <div class="views">
+    👁️ Total Views:
+    <img src="https://hitwebcounter.com/counter/counter.php?page=ahmedmobilepartsstore&style=0006&nbdigits=6&type=page&initCount=202017" />
   </div>
-</div><!-- PRODUCTS --><div class="products-section">
-  <h2>OUR <span class="orange">PRODUCTS</span></h2>  <div class="products"><div class="product">
-  <img src="product1.png">
-  <h3>iPhone 13 Battery</h3>
-  <div class="price">Rs 4500</div>
-  <a class="order-btn" href="#">Order</a>
 </div>
 
-<div class="product">
-  <img src="product2.png">
-  <h3>iPhone X Panel</h3>
-  <div class="price">Rs 7000</div>
-  <a class="order-btn" href="#">Order</a>
+<div class="menu">
+  <a href="#">Home</a>
+  <a href="#">All Parts</a>
+  <a href="#">About Us</a>
+  <a href="#">Contact Us</a>
+  <a class="whatsapp" href="https://wa.me/923444264653">Order on WhatsApp</a>
 </div>
 
-<div class="product">
-  <img src="product3.png">
-  <h3>iPhone 13 Back</h3>
-  <div class="price">Rs 2000</div>
-  <a class="order-btn" href="#">Order</a>
+  </div>
+</div><div class="banner">
+  <div class="container banner-inner"><div class="banner-text">
+  <h1>
+    BEST QUALITY<br>
+    <span class="orange">MOBILE PARTS</span><br>
+    AT BEST PRICES
+  </h1>
+
+  <p>
+    All kind of mobile parts are available here at best price and best quality.
+  </p>
+
+  <div class="buttons">
+    <a class="btn btn-green" href="https://wa.me/923444264653">Order on WhatsApp</a>
+    <a class="btn btn-outline" href="#">View All Products</a>
+  </div>
+</div>
+
+<div>
+  <img src="banner.png" alt="banner">
+</div>
+
+  </div>
+</div><div class="products-section">
+  <div class="container"><h2>OUR <span class="orange">PRODUCTS</span></h2>
+
+<div class="products">
+
+  <div class="product">
+    <img src="product1.png">
+    <h3>iPhone 13 Battery</h3>
+    <div class="price">Rs 4500</div>
+    <a class="order-btn" href="#">Order</a>
+  </div>
+
+  <div class="product">
+    <img src="product2.png">
+    <h3>iPhone X Panel</h3>
+    <div class="price">Rs 7000</div>
+    <a class="order-btn" href="#">Order</a>
+  </div>
+
+  <div class="product">
+    <img src="product3.png">
+    <h3>iPhone 13 Back</h3>
+    <div class="price">Rs 2000</div>
+    <a class="order-btn" href="#">Order</a>
+  </div>
+
 </div>
 
   </div>
 </div><div class="footer">
-  © 2025 Ahmed Mobile Parts Store. All Rights Reserved.
+  © 2025 Ahmed Mobile Parts Store — All Rights Reserved.
 </div></body>
 </html>
