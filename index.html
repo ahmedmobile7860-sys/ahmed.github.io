@@ -215,19 +215,24 @@ body {
 <!-- <!-- LIVE Views Style Counter -->
 
 <script>
-function updateViews() {
-  fetch('https://api.countapi.xyz/hit/ahmed-mobile-parts-store/visits')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById("view-count").innerText = data.value.toLocaleString();
-    })
-    .catch(() => {
-      document.getElementById("view-count").innerText = "0";
-    });
-}
+document.addEventListener("DOMContentLoaded", function() {
 
-updateViews();
-setInterval(updateViews, 5000);
+  function updateViews() {
+    fetch("https://api.countapi.xyz/hit/ahmed-mobile-parts-store/visits")
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        document.getElementById("view-count").innerText = data.value;
+      })
+      .catch(function() {
+        document.getElementById("view-count").innerText = "0";
+      });
+  }
+
+  updateViews();
+
+});
 </script>
 
 <div style="display:flex; align-items:center; font-family:Arial;">
