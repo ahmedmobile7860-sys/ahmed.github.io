@@ -205,35 +205,56 @@ body {
     AHMED MOBILE <span>PARTS STORE</span>
   </div>
     
-<!-- <!-- Live Views Counter -->
-<span id="view-count">Loading...</span>
+<!-- <!-- LIVE Views Style Counter -->
+<div style="display:flex; align-items:center; font-family:Arial;">
 
-<script>
-fetch('https://api.countapi.xyz/get/ahmed-mobile-parts-store/visits')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("view-count").innerText = data.value;
-  })
-  .catch(error => {
-    document.getElementById("view-count").innerText = "0";
-  });
-</script>
+  <!-- LIVE box -->
+  <span style="
+    background:red;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    font-weight:bold;
+    margin-right:8px;">
+    LIVE
+  </span>
 
-<script>
-fetch('https://api.countapi.xyz/get/ahmed-mobile-parts-store/visits')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('view-count').innerText = data.value;
-  });
-    </script>
+  <!-- Eye icon -->
+  <span style="
+    background:black;
+    color:white;
+    padding:6px 10px;
+    border-radius:6px;
+    margin-right:8px;">
+    👁️
+  </span>
 
-<div class="menu">
-  <a href="#">Home</a>
-  <a href="#">All Parts</a>
-  <a href="#">About Us</a>
-  <a href="#">Contact Us</a>
-  <a class="whatsapp" href="https://wa.me/923444264653">Order on WhatsApp</a>
+  <!-- Views number -->
+  <span id="view-count" style="
+    font-size:22px;
+    font-weight:bold;">
+    0
+  </span>
+
 </div>
+
+<script>
+function updateViews() {
+  fetch('https://api.countapi.xyz/hit/ahmed-mobile-parts-store/liveviews')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("view-count").innerText = data.value;
+    })
+    .catch(() => {
+      document.getElementById("view-count").innerText = "0";
+    });
+}
+
+updateViews();
+
+// Har 5 second me update hoga (live feel)
+setInterval(updateViews, 5000);
+</script>
 
   </div>
 </div><div class="banner">
